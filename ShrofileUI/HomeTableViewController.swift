@@ -10,6 +10,7 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
+    @IBOutlet var homeTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +19,20 @@ class HomeTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        homeTableView.rowHeight = UITableViewAutomaticDimension;
+        homeTableView.estimatedRowHeight = 400.0;
+        
+        if let navigationBar = self.navigationController?.navigationBar {
+            let firstFrame = CGRect(x: 30, y: 0, width: navigationBar.frame.width/2, height: navigationBar.frame.height)
+            
+            let firstLabel = UILabel(frame: firstFrame)
+            firstLabel.font = UIFont(name: "Roboto-Bold", size: 12.0)
+            firstLabel.textColor = UIColor.white
+            firstLabel.text = "SHROFILE"
+            
+            navigationBar.addSubview(firstLabel)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,25 +42,33 @@ class HomeTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    /*override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 2
+    }*/
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400.0
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+    
+    /*override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "storyCell", for: indexPath)
 
         // Configure the cell...
 
         return cell
-    }
-    */
+    }*/
+    
 
     /*
     // Override to support conditional editing of the table view.

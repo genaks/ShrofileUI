@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5128DD541DBDEA4C00072827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128DD531DBDEA4C00072827 /* AppDelegate.swift */; };
-		5128DD561DBDEA4C00072827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128DD551DBDEA4C00072827 /* ViewController.swift */; };
 		5128DD591DBDEA4C00072827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5128DD571DBDEA4C00072827 /* Main.storyboard */; };
 		5128DD5B1DBDEA4C00072827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5128DD5A1DBDEA4C00072827 /* Assets.xcassets */; };
 		5128DD5E1DBDEA4C00072827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5128DD5C1DBDEA4C00072827 /* LaunchScreen.storyboard */; };
 		5128DD691DBDEA4C00072827 /* ShrofileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128DD681DBDEA4C00072827 /* ShrofileUITests.swift */; };
 		5128DD741DBDEA4C00072827 /* ShrofileUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128DD731DBDEA4C00072827 /* ShrofileUIUITests.swift */; };
+		5128DD8F1DBE131D00072827 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128DD8E1DBE131D00072827 /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		5128DD501DBDEA4C00072827 /* ShrofileUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShrofileUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5128DD531DBDEA4C00072827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5128DD551DBDEA4C00072827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5128DD581DBDEA4C00072827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5128DD5A1DBDEA4C00072827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5128DD5D1DBDEA4C00072827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,19 @@
 		5128DD6F1DBDEA4C00072827 /* ShrofileUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShrofileUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5128DD731DBDEA4C00072827 /* ShrofileUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrofileUIUITests.swift; sourceTree = "<group>"; };
 		5128DD751DBDEA4C00072827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5128DD821DBDF3A600072827 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		5128DD831DBDF3A600072827 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5128DD841DBDF3A600072827 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		5128DD851DBDF3A600072827 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5128DD861DBDF3A600072827 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		5128DD871DBDF3A600072827 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		5128DD881DBDF3A600072827 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		5128DD891DBDF3A600072827 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		5128DD8A1DBDF3A600072827 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5128DD8B1DBDF3A600072827 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		5128DD8C1DBDF3A600072827 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		5128DD8D1DBDF3A600072827 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5128DD8E1DBE131D00072827 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +109,9 @@
 		5128DD521DBDEA4C00072827 /* ShrofileUI */ = {
 			isa = PBXGroup;
 			children = (
+				5128DD811DBDF39500072827 /* Roboto */,
 				5128DD531DBDEA4C00072827 /* AppDelegate.swift */,
-				5128DD551DBDEA4C00072827 /* ViewController.swift */,
+				5128DD8E1DBE131D00072827 /* HomeTableViewController.swift */,
 				5128DD571DBDEA4C00072827 /* Main.storyboard */,
 				5128DD5A1DBDEA4C00072827 /* Assets.xcassets */,
 				5128DD5C1DBDEA4C00072827 /* LaunchScreen.storyboard */,
@@ -123,6 +136,25 @@
 				5128DD751DBDEA4C00072827 /* Info.plist */,
 			);
 			path = ShrofileUIUITests;
+			sourceTree = "<group>";
+		};
+		5128DD811DBDF39500072827 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				5128DD821DBDF3A600072827 /* Roboto-Black.ttf */,
+				5128DD831DBDF3A600072827 /* Roboto-BlackItalic.ttf */,
+				5128DD841DBDF3A600072827 /* Roboto-Bold.ttf */,
+				5128DD851DBDF3A600072827 /* Roboto-BoldItalic.ttf */,
+				5128DD861DBDF3A600072827 /* Roboto-Italic.ttf */,
+				5128DD871DBDF3A600072827 /* Roboto-Light.ttf */,
+				5128DD881DBDF3A600072827 /* Roboto-LightItalic.ttf */,
+				5128DD891DBDF3A600072827 /* Roboto-Medium.ttf */,
+				5128DD8A1DBDF3A600072827 /* Roboto-MediumItalic.ttf */,
+				5128DD8B1DBDF3A600072827 /* Roboto-Regular.ttf */,
+				5128DD8C1DBDF3A600072827 /* Roboto-Thin.ttf */,
+				5128DD8D1DBDF3A600072827 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Roboto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5128DD561DBDEA4C00072827 /* ViewController.swift in Sources */,
+				5128DD8F1DBE131D00072827 /* HomeTableViewController.swift in Sources */,
 				5128DD541DBDEA4C00072827 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
